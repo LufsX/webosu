@@ -196,7 +196,7 @@
             function refreshLivescore(){
                 let xhr = new XMLHttpRequest();
                 xhr.responseType = 'text';
-                xhr.open("GET", "https://proxy.lufs.workers.dev/?url=http://api.osugame.online/fetch/");
+                xhr.open("GET", "https://cors.isteed.cc/http://api.osugame.online/fetch/");
                 xhr.onload = function() {
                     showActivity(JSON.parse(xhr.response));
                 }
